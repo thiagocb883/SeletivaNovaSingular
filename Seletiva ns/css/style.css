@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+	margin:0 auto;
+	padding: 0px;
+	font-family:'Calibri';
+	text-decoration:none;
+}
+
+html {
+	height:100%;
+	scroll-behavior: auto;
+
+}
+
+body{
+	height:100%;
+	background: url(../imagens/dd.png) no-repeat;
+	background-attachment: fixed;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+a {
+	text-decoration: none;
+
+}
+
+
+/*titulos*/
+h1{
+	display: block;
+	width: fit-content;
+	text-align: center;
+	margin-top: 170px;
+	font-size: 4rem;
+	color: transparent;
+	font-family: 'Russo One', sans-serif;
+	animation: text_reveal .5s ease forwards;
+	animation-delay: 1.5s;
+}
+
+
+@keyframes text_reveal_box{
+	50%{
+	width: 100%;
+	left: 0;
+}
+
+	100%{
+	width: 0;
+	left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100%{
+		color: #BEB0A7;
+	}
+}
+
+
+/*TOPO*/
+header {
+	top:0px;
+	background: #ECE4B7;
+	width:100%;
+	height:90px;	
+	position: fixed;
+	border-bottom:solid 2px #02020B;
+}
+
+header img{
+	width:182px;
+	float:left;
+	margin: 0 0 0 8%;
+}
+
+header #menu{
+	float:right;
+	height:100%;
+	width:60%;
+}
+
+header #menu li{
+	list-style:none;
+	float:left;
+	margin-top:27px;
+	margin-left:3%;
+	
+}
+
+header #menu li a{
+	font-size:26px;
+	letter-spacing:2px;
+	color: #222;
+}
+
+header #menu li a:hover{
+	color: #A24B15;
+	border:solid #241105;
+	border-width: 1px 0px;
+	padding: 3px 0px;
+	transition: 0.3s;
+}
+
+header .s-m{
+	
+	width:92px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	float:left;
+	margin: 25px 0 0 8%;
+	
+}
+
+header .s-m a{
+	display: inline-flex;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	color: black;
+	margin:  4px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+header .s-m a:hover{
+	background: #6F1D1B;
+	
+}
+
+header .s-ma i{
+	transition: 0.5s all;
+}
+
+header .s-m a:hover > i{
+	transform: scale(1.4)rotate(26deg);
+}
+
+/*HOME*/
+#home{
+	width:100%;
+	min-height: calc(100% - 70px); /**/
+	text-align: center;
+}
+
+@font-face {
+	font-family: "dolce";
+	src: url("../font/Dolce Vita Light_0.ttf");
+	}
+
+#home h2{
+	width:900px;
+	font-size: 20px;
+	letter-spacing:4px;
+	font-family: 'Russo One', sans-serif;
+	text-align: center; 
+	margin-top: 170px;
+	color: #BEB0A7;
+}
+
+
+#home  .cta{
+	display: inline-block;
+	padding: 10px 50px;
+	color: #ADACB5;
+	background-color: transparent;
+	border: 2px solid #D8DDE9;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 50px;
+	transition: .2s ease;
+	transition-property: background-color, color;
+}
+
+#home  .cta:hover {
+	color: white;
+	background-color:#BBB4A0;
+}
+
+/*SOBRE*/
+#sobre{
+	border-top:solid 2px #D8DDE9;
+	background-color: rgba(36, 36, 36, 0.836);
+	width:100%;
+	height: 100%;
+	display: table;
+}
+
+#sobre h1{
+	display: block;
+	width: fit-content;
+	text-align: center;
+	color: black;
+	margin-top: 30px;
+	font-size: 4rem;
+}
+
+#imagemhm{
+	display: table-cell;
+	float: left;
+	margin-top: 80px;
+	margin-left: 225px;
+}
+
+#txt{
+	display: table-cell;
+	float: left;
+	width: 500px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 25px;
+	color: #BEB0A7;
+	margin-top: 78px;
+	margin-left: 25px;
+
+}
+
+/*Galeria*/
+#galeria{
+	border-top:solid 2px #D8DDE9;
+	background-color: rgba(100,100,100,0.5);
+	width:100%;
+	height: 100%;
+}
+
+#galeria li{
+    border:none;
+    border-radius:20px;
+    margin-top:40px;
+    list-style:none;
+    float:left;
+    margin-left:7%;
+    background:#FFF;
+    width:24%;
+    height: 380px;
+
+}
+
+#galeria li img{
+    border:none;
+    border-radius:20px 20px 0px 0px;
+    width:100%;
+    height:280px;
+
+}
+#galeria li p{
+    width:90%;
+    font-size: 16px;
+    letter-spacing:1px;
+    text-align: center; 
+    margin-top: 10px;
+    color: #000;
+
+}
+
+#galeria h1{
+	display: block;
+	width: fit-content;
+	text-align: center;
+	color: black;
+	margin-top: 30px;
+	font-size: 4rem;
+}
+
+
+#galeria  p{
+	width:900px;
+	font-size: 20px;
+	letter-spacing:4px;
+	text-align: justify; 
+	margin-top: 30px;
+	color: #000;
+}
+
+
+
+/*NOTICIAS*/
+#noticias{
+	border-top:solid 2px #D8DDE9;
+	background-color: #fff;
+	width:100%;
+	height: 100%;
+}
+
+#noticias img{
+	border-radius: 20%;
+}
+
+#noticias h1{
+	display: block;
+	width: fit-content;
+	text-align: center;
+	color: black;
+	margin-top: 30px;
+	font-size: 4rem;
+}
+
+
+#noticias  p{
+	width:900px;
+	font-size: 20px;
+	letter-spacing:4px;
+	text-align: center; 
+	margin-top: 40px;
+	color: #000;
+}
+
+#noticias li{
+	border:none;
+	border-radius:20px;
+	margin-top:70px;
+	list-style:none;
+	float:left;
+	text-align: center; 
+	margin-left:4%;
+	width:20%;
+	height: 320px;
+	
+}
+
+#noticias li h3{
+	padding-top:10px;
+	color: #156782;
+	
+}
+
+#noticias li p{
+	width:94%;
+	font-size: 18px;
+	letter-spacing:0px;
+	text-align: center; 
+	margin-top: 10px;
+	color: #000;
+	
+}
+
+/*CONTATO*/
+#contato{
+	border-top:solid 2px #D8DDE9;
+	background-color: rgba(255,255,255,0.5);
+	width:100%;
+	text-align: center;
+	min-height: calc(100% - 62px);
+}
+
+#contato h1{
+	display: block;
+	width: fit-content;
+	text-align: center;
+	color: black;
+	margin-top: 30px;
+	font-size: 4rem;
+}
+
+#contato .btn{
+	cursor: pointer;
+	border-radius:8px;
+	margin: 5px 0px 0px 560px;
+	padding:6px 20px;
+	background:#8f8f8f;
+	font-size: 20px;
+	border:none;
+	color:#fff;
+}
+
+#contato .btn:hover{
+	transition: 0.5s;
+	background:#156782;
+	color:#fff;
+}
+
+#contato form {
+	margin-top: 40px;
+}
+
+#contato .form {
+	height:30px;
+	width:210px;
+	border-radius:5px;
+	border:solid 1px #333;
+	padding-left:5px;
+}
+
+#contato textarea {
+	resize:none;
+	margin-top:10px;
+	height:300px;
+	width:645px;
+	border-radius:5px;
+	border:solid 1px #333;
+	padding:5px;
+}
+
+
+
+/*RODAPE*/
+footer {
+	background: #ECE4B7;
+	border-top:solid 2px #fff;
+	width:100%;
+	position:relative;
+	height:115px;
+	text-align:center;
+	bottom:0px
+}
+footer img{
+	padding:0px;
+	margin-top: 10px;
+	width:130px;
+}
+
+footer p{
+	font-size: 20px;
+	font-family: 'Russo One', sans-serif;
+	letter-spacing:4px;
+	text-align: center; 
+	margin-top: 10px;
+	color: #000;
+}
